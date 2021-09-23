@@ -1,3 +1,7 @@
+*{
+    background-color: rgba(218, 227, 232, .05);
+}
+
 .line{
     display: block;
 
@@ -16,21 +20,32 @@
   
 }
 
+a.adaZuniga {
+    font-size: 4vw;
+}
+
 .adaZuniga{
-    font-size: 85px;
     font-weight: normal;
     font-family: "Happy Monkey";
     color: rgb(0, 0, 0, .75);
     text-shadow: 2px 1px 3px rgba(0, 0, 0, .75);
 
-
+    margin-top: 2.5%;
+    
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    text-decoration: none;
+  
 }
 
 .logoBackground{
-    height: fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 30%;
 }
 
 
@@ -125,6 +140,9 @@ a:active#hobbies{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 30%;
+    height: 30%;
+    object-fit: contain;
 
 }
 
@@ -132,6 +150,13 @@ a:active#hobbies{
 
 
 
+
+h3{
+    margin-top: 6px;
+    text-decoration: underline;
+    font-weight: lighter;
+    margin-bottom: 0px;
+}
 
 .content{
     display: block;
@@ -152,15 +177,14 @@ a:active#hobbies{
 
 
     
-    padding: 20px 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
 
     font-family: "Josefin Sans", sans-serif;
     font-weight: lighter;
 
-    font-size: 35px;
-    
-
-
+    font-size: 25px;
 }
 
 .content strong {
@@ -174,11 +198,16 @@ a:active#hobbies{
 
 
 
+
+
+
+
 #comments{
     float:right;
 
     font-family:"Josefin Sans", sans-serif;
     font-size: 25px;
+    font-weight: lighter;
     color: black;
 
     width: 130px;
@@ -194,6 +223,8 @@ a:active#hobbies{
 
     background-color: rgba(182, 217, 213, .25);
     box-shadow: 1px 1px 4px rgba(79, 100, 103, .8);
+
+    margin-bottom: 15px;
 }
 
 
@@ -215,7 +246,9 @@ a:visited#comments
 }
 
 /*HOVERED|MOUSE-OVER*/
-a:hover#comments
+a:hover#comments,
+input[type="submit"]:hover,
+input[type="reset"]:hover
 {
     color: black;
     border: solid 3px rgb(0, 0, 0);
@@ -239,10 +272,10 @@ a.adaHome h1{
     height: 50%;
 }
 
-.subtitles{
+h2{
   
     font-style: normal;
-    font-weight: lighter;
+    font-weight: bold;
     font-size: 40px;
     font-family: "Josefin Sans",sans-serif;
     
@@ -256,12 +289,8 @@ figure figcaption{
 }
 
 
-.centerImg{
-    width: 70%;
-    height: 70%;
-}
 
-#location{
+.location{
     display: inline-block;
     font-family: "Josefin Sans",sans-serif;
     font-size: 20px;
@@ -277,14 +306,19 @@ input[type="checkbox"]{
 
 input[type="text"],
 input[type="email"],
-input[type="submit"]
+input[type="submit"], 
+input[type="url"],
+input[type="reset"]
 {
     background-color: rgba(182, 217, 213, .25);
     box-shadow: 1px 1px 4px rgba(79, 100, 103, .8);
     border: solid 1px rgb(79, 100, 103);
     border-radius: 10px;
+    width: auto;
+    height: 26px;
 }
-input[type="submit"]{
+input[type="submit"],
+input[type="reset"]{
     font-family: "Josefin Sans", sans-serif;
     font-size: 17px;
     padding-top: 2px;
@@ -315,4 +349,44 @@ a:hover#github{
 a:active#linkedin, 
 a:active#github{
     color: black;
+}
+
+.comentsLayOut{
+    font-family: "Josefin Sans", sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+h2.comentsLayOut{
+    font-weight: lighter;
+}
+
+textarea{
+    display: block;
+  
+    background-color: rgba(182, 217, 213, .25);
+    box-shadow: 1px 1px 4px rgba(79, 100, 103, .8);
+    
+    border: solid 1px rgb(79, 100, 103);
+    border-radius: 10px;
+    
+    width: 300px;
+    height: 100px;
+
+    font-family: "Josefin Sans", sans-serif;
+
+    padding-top: 7px;
+}
+
+#contactName::placeholder,
+#contactEmail::placeholder,
+#cName::placeholder,
+#cEmail::placeholder,
+#cURL::placeholder,
+textarea::placeholder
+{
+    font-family: "Josefin Sans", sans-serif;
 }

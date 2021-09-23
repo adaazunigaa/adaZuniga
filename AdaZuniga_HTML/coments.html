@@ -4,61 +4,83 @@
 
     <head>
         <title>Comments</title>
+        <!--FONTS-->
+        <link href='https://fonts.googleapis.com/css?family=Happy Monkey' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Josefin+Sans" />
+
+        <!--NORMALIZED CSS-->
+         <link rel="stylesheet" type="text/css"  href="styles.css">
+    
+        <!--CUSTOM STYLESS-->
+        <link rel="stylesheet" type="text/css"  href="styles.css">
+        
+        <!--[if IE]>
+        ink href="ieOnlyStylesheet.css" />
+        <![endif]-->
     </head>  
+
         <body>
             <header>
-                <h1>Ada Zuniga</h1>
+                <div class="container">
+                    <a href="home.html" class="adaZuniga">Ada Zuniga</a>
+                    <img src="images/logo.png" alt="logo background" class="logoBackground" width="621" height="114">
+               </div>
             </header>
-            <hr>
+            <span class="line"></span>
 
-            <nav>
-                <div class="menu">
-                    <a href="home.html">Home</a>
-                    <a href="about_me.html">About</a>
-                    <a href="projects.html">Projects</a>
-                    <a href="hobbies.html">Hobbies</a>
-                    <a href="contact.html">Contact</a>
-                </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="home.html" id="home">Home</a></li>
+                    <li><a href="about_me.html" id="about">About</a></li>
+                    <li><a href="projects.html" id="projects">Projects</a></li>
+                    <li><a href="hobbies.html" id="hobbies">Hobbies</a></li>
+                    <li><a href="contact.html" id="contact">Contact</a></li>
+                </ul>
             </nav>
 
-            <div>
-                <h2> <em>SPEACK YOUR MIND!</em></h2>
-                
+            
+                <h2>SPEACK YOUR MIND!</h2>
+
+
+            <div class="comentsLayOut">
                 <p>
                     Leave a comment about anything 
                     you’d like and help me improve!
                 </p>
+            
+
+
+                <form >
+                    <div>
+                        <input type="text" id="cName" placeholder="Name">
+                        <label for="cName">Name</label>
+                        <br>
+
+                        <input type="email" id="cEmail" placeholder="your@email.com">
+                        <label for="cName">email</label>
+                        <br>
+
+                        <input type="url" id="cURL" placeholder="website/url">
+                        <label for="cURL">Website</label>
+                        <br>
+
+                        <textarea id="visitorComment" placeholder="Comments..."></textarea>
+                         
+                        <br>
+
+                        <input type="submit" value="Send">
+                        <input type="reset" value="Clear">
+
+                    </div>
+                </form>
+
             </div>
 
 
-            <form >
-                <div>
-                    <input type="text" id="cName" placeholder="Name">
-                    <label for="cName">Name</label>
-                    <br>
-
-                    <input type="email" id="cEmail" placeholder="your@email.com">
-                    <label for="cName">email</label>
-                    <br>
-
-                    <input type="url" id="cURL" placeholder="website/url">
-                    <label for="cURL">Website</label>
-                    <br>
-
-                    <textarea id="comments" placeholder="Comments..."></textarea>
-                    <br>
-
-                    <input type="submit" value="Send">
-                    <input type="reset" value="Clear">
-
-                </div>
-            </form>
 
 
 
-
-
-            
+            <a href="coments.html" id="comments">Comment</a>
         </body>
     
 
